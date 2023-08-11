@@ -2,7 +2,7 @@ import os, sys,time
 import subprocess as sp
 
 '''
-This script was used from a terminal to run all the spatial simulations in MCell
+This script was used to run all the spatial simulations in MCell, it has to be in the same directory as the mdl files
 GCG
 8.11.23
 '''
