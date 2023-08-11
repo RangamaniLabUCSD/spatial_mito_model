@@ -1,0 +1,84 @@
+DEFINE_MOLECULES
+{
+  T
+  {
+    DIFFUSION_CONSTANT_3D = 1.5e-7
+  }
+  D
+  {
+    DIFFUSION_CONSTANT_3D = 1.5e-7
+  }
+  Eo
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  Ei
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  EH3
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  H3E
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  H3Eo
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  H3ES
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  L
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  DL
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  LD
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  TL
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  LT
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  DLT
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  TLD
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  DLD
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  TLT
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  DLDp
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  TLTp
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  porin
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+}
+

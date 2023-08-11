@@ -1,0 +1,35 @@
+DEFINE_REACTIONS
+{
+  Eo' <-> EH3' [>a65, <a56]
+  EH3' <-> H3Eo' [>a54, <a45]
+  H3Eo' + D, <-> H3ES' [>a43, <a34]
+  H3ES' -> T, + H3E' [a32] : atp_prod
+  H3E' <-> Ei' [>a21, <a12]
+  Ei' <-> Eo' [>a16, <a61]
+  D' + L' <-> DL' [>k1_on, <k1_off]
+  DL' + T, <-> DLT' [>k2_on, <k2_off]
+  L' + T, <-> LT' [>k2_on, <k2_off]
+  LT' + D' <-> DLT' [>k1_on, <k1_off]
+  L' + T' <-> TL' [>k5_on, <k5_off]
+  TL' + D, <-> TLD' [>k6_on, <k6_off]
+  TLD' -> DLT' [kcp] : counter_prod
+  L' + D, <-> LD' [>k6_on, <k6_off]
+  LD' + T' <-> TLD' [>k5_on, <k5_off]
+  LD' + D' <-> DLD' [>k1_2, <k1_off]
+  DL' + D, <-> DLD' [>k6_2, <k6_off]
+  TL' + T, <-> TLT' [>k2_2, <k2_off]
+  LT' + T' <-> TLT' [>k5_2, <k5_off]
+  DLT' -> TLD' [kp] : prod
+  LD' + D' <-> DLDp' [>k1_2, <k1_off]
+  DL' + D, <-> DLDp' [>k6_2, <k6_off]
+  DLD' -> DLDp' [kd] : unprod_d
+  DLDp' -> DLD' [kd] : unprod_dp
+  LT' + T' <-> TLTp' [>k5_2, <k5_off]
+  TL' + T, <-> TLTp' [>k2_2, <k2_off]
+  TLT' -> TLTp' [kt] : unprod_t
+  TLTp' -> TLT' [kt] : unprod_tp
+  T, + H3E' -> H3ES' [a23] : atp_dis
+  porin' + T, -> porin' + T' [kpf] : exp_t
+  porin' + T' -> porin' + T, [kpf] : imp_t
+
+}
