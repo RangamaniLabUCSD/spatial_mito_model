@@ -1,0 +1,40 @@
+/* DEFINE PARAMETERS */
+a12 = 100    /*    units=s-1 */
+a43 = 2e6    /*    units=M-1s-1 */
+a56 = 1e3    /*    units=s-1 */
+a45 = 1e2    /*    units=s-1 */
+a54 = 1e2    /*    units=s-1 */
+a21 = 40    /*    units=s-1 */
+a65 = 3969    /*    units=s-1 */
+a34 = 1e2    /*    units=s-1 */
+a32 = 5e3    /*    units=s-1 */
+a23 = 5e6    /*    units=M-1s-1 */
+a16 = 146516    /*    units=s-1 */
+a61 = 33989    /*    units=s-1 */
+a25 = 0    /*    units=s-1 */
+a52 = 0    /*    units=s-1 */
+k1_on = 4e6
+k1_off = 100
+k2_on = 6.4e6
+k2_off = 4e4
+k5_on = 4e5
+k5_off = 200
+k6_on = 4e6
+k6_off = 4e4
+kp = 92
+kcp = 3.5
+kt = 5.8
+kd = 4.8
+k1_2 = 2e6
+k2_2 = 3.2e6
+k5_2 = 2e5
+k6_2 = 2e6
+kpf = 1e6
+rel_t_ims = 724 /* Number of ATP in the IMS */
+rel_d_ims = 100 /* Number of ADP in the IMS */
+rel_d_mo = 1082 /* Number of ADP in the matrix */
+rel_t_mo = 977 /* Number of ATP in the matrix */
+rel_eo_mo = 98    /* Number of ATP synthases */
+den_porin = 1788    /* Number of VDACs */
+rel_t_c = 9744  /* Number of ATPs in the Cube */
+lo = 2570 /* Number of ANTs */
