@@ -1,0 +1,7 @@
+MODIFY_SURFACE_REGIONS
+{
+  outer_membrane_final[ALL]
+  {
+    SURFACE_CLASS = Surface_Clamp_ADP
+  }
+}

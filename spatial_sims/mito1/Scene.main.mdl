@@ -1,0 +1,93 @@
+INCLUDE_FILE = "Scene.parameters.mdl"
+
+sprintf(seed,"%05g",SEED)
+
+CHECKPOINT_OUTFILE = "ch_s" & seed & "_1"
+CHECKPOINT_REALTIME = 10:0:0:0
+ITERATIONS = 3e7
+TIME_STEP = 1e-8
+VACANCY_SEARCH_DISTANCE = 10
+
+INCLUDE_FILE = "Scene.initialization.mdl"
+
+PARTITION_X = [[0.604844987392426 TO 1.45516002178192 STEP 0.008]]
+PARTITION_Y = [[1.35374999046326 TO 2.32625007629395 STEP 0.008]]
+PARTITION_Z = [[-0.365000009536743 TO 1.55499994754791 STEP 0.008]]
+
+
+INCLUDE_FILE = "Scene.molecules.mdl"
+
+INCLUDE_FILE = "Scene.surface_classes.mdl"
+
+INCLUDE_FILE = "Scene.reactions.mdl"
+
+INCLUDE_FILE = "Scene.geometry.mdl"
+
+INCLUDE_FILE = "Scene.mod_surf_regions.mdl"
+
+INSTANTIATE Scene OBJECT
+{
+  Cube OBJECT Cube {}
+  inner_membrane_final OBJECT inner_membrane_final {}
+  outer_membrane_final OBJECT outer_membrane_final {}
+
+  rel_d_m RELEASE_SITE
+  {
+   SHAPE = Scene.inner_membrane_final[ALL]
+   MOLECULE = D
+   NUMBER_TO_RELEASE = rel_d_mo
+   RELEASE_PROBABILITY = 1
+  }
+  rel_eo RELEASE_SITE
+  {
+   SHAPE = Scene.inner_membrane_final[high_curva]
+   MOLECULE = Eo'
+   NUMBER_TO_RELEASE = rel_eo_mo
+   RELEASE_PROBABILITY = 1
+  }
+  rel_t_m RELEASE_SITE
+  {
+   SHAPE = Scene.inner_membrane_final[ALL]
+   MOLECULE = T
+   NUMBER_TO_RELEASE = rel_t_mo
+   RELEASE_PROBABILITY = 1
+  }
+  rel_l RELEASE_SITE
+  {
+   SHAPE = Scene.inner_membrane_final[high_curva]
+   MOLECULE = L'
+   NUMBER_TO_RELEASE = lo
+   RELEASE_PROBABILITY = 1
+  }
+  rel_d_ims RELEASE_SITE
+  {
+   SHAPE = Scene.outer_membrane_final[ALL] - Scene.inner_membrane_final[ALL]
+   MOLECULE = D
+   NUMBER_TO_RELEASE = rel_d_ims
+   RELEASE_PROBABILITY = 1
+  }
+  rel_t_ims RELEASE_SITE
+  {
+   SHAPE = Scene.outer_membrane_final[ALL] - Scene.inner_membrane_final[ALL]
+   MOLECULE = T
+   NUMBER_TO_RELEASE = rel_t_ims
+   RELEASE_PROBABILITY = 1
+  }
+  rel_p RELEASE_SITE
+  {
+   SHAPE = Scene.outer_membrane_final[ALL]
+   MOLECULE = porin'
+   NUMBER_TO_RELEASE = den_porin
+   RELEASE_PROBABILITY = 1
+  }
+  rel_tc RELEASE_SITE
+  {
+   SHAPE = Scene.Cube[ALL] - Scene.outer_membrane_final[ALL]
+   MOLECULE = T
+   NUMBER_TO_RELEASE = rel_t_c
+   RELEASE_PROBABILITY = 1
+  }
+
+}
+
+INCLUDE_FILE = "Scene.rxn_output.mdl"
