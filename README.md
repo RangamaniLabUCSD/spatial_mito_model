@@ -9,5 +9,5 @@ The repository is organized as follows: the folder `/spatial_sims/`contains all 
 
 Please cite the following paper:
 
-[G.C.Garcia, K. Gupta, T Bartol, T. Sejnowski, P. Rangamani (2023) Mitochondrial morphology governs ATP production rate. J. Gen. Physiol. 2023 Vol. 155 No. 9](https://doi:/10.1085/jgp.202213263)
+[G.C.Garcia, K. Gupta, T Bartol, T. Sejnowski, P. Rangamani (2023) Mitochondrial morphology governs ATP production rate. J. Gen. Physiol. 2023 Vol. 155 No. 9](https://doi.org/10.1085/jgp.202213263)
 
