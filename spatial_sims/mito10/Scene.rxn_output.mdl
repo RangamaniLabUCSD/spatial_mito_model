@@ -1,0 +1,38 @@
+sprintf(seed,"%05g",SEED)
+REACTION_DATA_OUTPUT
+{
+  STEP=1e-6
+
+  {COUNT[T,Scene.inner_membrane_final]}=> "./react_data/seed_" & seed & "/T.inner_membrane_final.dat"
+  {COUNT[T,Scene.outer_membrane_final]}=> "./react_data/seed_" & seed & "/T.outer_membrane_final.dat"
+  {COUNT[D,Scene.inner_membrane_final]}=> "./react_data/seed_" & seed & "/D.inner_membrane_final.dat"
+  {COUNT[D,Scene.outer_membrane_final]}=> "./react_data/seed_" & seed & "/D.outer_membrane_final.dat"
+  {COUNT[L,Scene.inner_membrane_final]}=> "./react_data/seed_" & seed & "/L.inner_membrane_final.dat"
+  {COUNT[prod,WORLD]}=> "./react_data/seed_" & seed & "/prod.World.dat"
+  {COUNT[atp_prod,WORLD]}=> "./react_data/seed_" & seed & "/atp_prod.World.dat"
+  {COUNT[atp_dis,WORLD]}=> "./react_data/seed_" & seed & "/atp_dis.World.dat"
+  {COUNT[counter_prod,WORLD]}=> "./react_data/seed_" & seed & "/counter_prod.World.dat"
+  {COUNT[unprod_d,WORLD]}=> "./react_data/seed_" & seed & "/unprod_d.World.dat"
+  {COUNT[unprod_dp,WORLD]}=> "./react_data/seed_" & seed & "/unprod_dp.World.dat"
+  {COUNT[EH3,WORLD]}=> "./react_data/seed_" & seed & "/EH3.World.dat"
+  {COUNT[Ei,WORLD]}=> "./react_data/seed_" & seed & "/Ei.World.dat"
+  {COUNT[Eo,WORLD]}=> "./react_data/seed_" & seed & "/Eo.World.dat"
+  {COUNT[H3E,WORLD]}=> "./react_data/seed_" & seed & "/H3E.World.dat"
+  {COUNT[H3Eo,WORLD]}=> "./react_data/seed_" & seed & "/H3Eo.World.dat"
+  {COUNT[H3ES,WORLD]}=> "./react_data/seed_" & seed & "/H3ES.World.dat"
+  {COUNT[unprod_t,WORLD]}=> "./react_data/seed_" & seed & "/unprod_t.World.dat"
+  {COUNT[DL,WORLD]}=> "./react_data/seed_" & seed & "/DL.World.dat"
+  {COUNT[DLD,WORLD]}=> "./react_data/seed_" & seed & "/DLD.World.dat"
+  {COUNT[DLDp,WORLD]}=> "./react_data/seed_" & seed & "/DLDp.World.dat"
+  {COUNT[LD,WORLD]}=> "./react_data/seed_" & seed & "/LD.World.dat"
+  {COUNT[DLT,WORLD]}=> "./react_data/seed_" & seed & "/DLT.World.dat"
+  {COUNT[LT,WORLD]}=> "./react_data/seed_" & seed & "/LT.World.dat"
+  {COUNT[TL,WORLD]}=> "./react_data/seed_" & seed & "/TL.World.dat"
+  {COUNT[TLD,WORLD]}=> "./react_data/seed_" & seed & "/TLD.World.dat"
+  {COUNT[TLT,WORLD]}=> "./react_data/seed_" & seed & "/TLT.World.dat"
+  {COUNT[TLTp,WORLD]}=> "./react_data/seed_" & seed & "/TLTp.World.dat"
+  {COUNT[imp_t,WORLD]}=> "./react_data/seed_" & seed & "/imp_t.World.dat"
+  {COUNT[exp_t,WORLD]}=> "./react_data/seed_" & seed & "/exp_t.World.dat"
+  {COUNT[T,Scene.Cube]}=> "./react_data/seed_" & seed & "/T.Cube.dat"
+
+}
