@@ -46,7 +46,7 @@ print('ims',nr_do_i,nr_to_i,nr_to_c,0.05*6.5, 0.1*0.45)
 
 #Number of proteins
 no1_ant = 10718 #number of ANTS #############
-no_atp = 150 #number of atphases #######
+no_atp = 150 #number of atpases #######
 n_porin = 5985 #### Number of VDACS #########
 
 k7 = 92 #0.74
@@ -151,8 +151,8 @@ traj = ode.compute('polarization')
 pd   = traj.sample()
 
 
-time = np.genfromtxt("./mito2/high_curva/time_10c_1e8_m4", dtype = float)
-av_var = pickle.load(open('./mito2/high_curva/av_10c_1e8_m4','rb'))
+time = np.genfromtxt("./mito2/high_curva/time_10c_1e8_m2", dtype = float)
+av_var = pickle.load(open('./mito2/high_curva/av_10c_1e8_m2','rb'))
 
 fig = plt.figure(1)
 fig.subplots_adjust(right=0.97, left = 0.16, bottom =0.15, top = 0.90, wspace=0.7, hspace = 0.2)
