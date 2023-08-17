@@ -21,21 +21,21 @@ params = {'axes.labelsize': 8,
 mpl.rcParams.update(params)
 
 Na = 6.02214e23
-vmito = 0.016e-15 #lt matrix
-vims = 0.021e-15 # IMS
-vcube = 0.306e-15
+vmito = 0.016e-15 #vol matrix lt
+vims = 0.021e-15 # vol IMS
+vcube = 0.306e-15 #vol cyto
 
 #---
-cdm_i = 2 #10mM
-ctm_i = 13 #mM
-cdo_i = 0.1 #10mM
-cto_i = 6.5 #mM
+cdm_i = 2 #mM adp concentration matrix
+ctm_i = 13 #mM atp concentration matrix
+cdo_i = 0.1 #mM adp concentration cyto/ims 
+cto_i = 6.5 #mM atp concentration cyto/ims
 
-nr_dm_m = 0.45*0.8*6.02*cdm_i*vmito*1e20 #number of molecules Dm
-nr_tm_m = 0.05*6.02*ctm_i*vmito*1e20
-nr_do_i = 0.45*6.02*cdo_i*vims*1e20
-nr_to_i = 0.05*6.02*cto_i*vims*1e20
-nr_to_c = 0.05*6.02*cto_i*vcube*1e20
+nr_dm_m = 0.45*0.8*6.02*cdm_i*vmito*1e20 #number of adp molecules in the matrix
+nr_tm_m = 0.05*6.02*ctm_i*vmito*1e20 # number of atp molecules in the matrix 
+nr_do_i = 0.45*6.02*cdo_i*vims*1e20 #number of adp molecules in the ims
+nr_to_i = 0.05*6.02*cto_i*vims*1e20 #number of atp molecules in the ims
+nr_to_c = 0.05*6.02*cto_i*vcube*1e20 #number of atp molecules in the cyto
 
 
 no1_ant = 16471 #nr of ants
